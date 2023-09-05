@@ -26,8 +26,9 @@ class _AuthPageState extends State<AuthPage> {
             ),
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
-      body: SingleChildScrollView(
-        child: Center(
+      body: Center(
+        child: Container(
+          alignment: AlignmentGeometry.lerp(Alignment.center, Alignment.center, 0.5),
           child: Card(
             margin: EdgeInsets.all(20),
             child: SingleChildScrollView(
