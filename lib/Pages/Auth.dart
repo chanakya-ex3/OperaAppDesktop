@@ -9,10 +9,10 @@ class AuthPage extends StatefulWidget {
 
 class _AuthPageState extends State<AuthPage> {
   @override
-  Widget build(BuildContext context) {
+  Widget build (BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset("assets/images/OperaLogo.png"),
+        leading: Image(image: AssetImage('assets/images/logo.png')) ,
         title:
             Center(child: Text('Opera Project Management Consultants Pvt Ltd')),
         backgroundColor: Theme.of(context).colorScheme.primary,
