@@ -31,34 +31,41 @@ class _AuthPageState extends State<AuthPage> {
           child: Card(
             margin: EdgeInsets.all(20),
             child: SingleChildScrollView(
-              child: Container(
-                width: 600,
-                child: Form(
-                  child: Column(
-                    children: [
-                      Text("Login Page"),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                            labelText: "Email",
-                            hintText: "Enter your email address",
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  width: 600,
+                  child: Form(
+                    child: Column(
+                      children: [
+                        Text("Login Page",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              labelText: "Email",
+                              hintText: "Enter your email address",
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                              labelText: "Password", hintText: "Enter your password"),
-                          obscureText: true,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                                labelText: "Password", hintText: "Enter your password"),
+                            obscureText: true,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      ElevatedButton(onPressed: ()=>print("clicked"), child: Text("Login")),
-                    ],
+                        SizedBox(
+                          height: 20,
+                        ),
+                        ElevatedButton(onPressed: ()=>print("clicked"), child: Text("Login")),
+                      ],
+                    ),
                   ),
                 ),
               ),
