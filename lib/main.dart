@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
               seedColor: const Color.fromARGB(255, 92, 13, 161),
               primary: Color.fromARGB(255, 92, 13, 161),
-              secondary: Colors.blue.shade900,
+              secondary: const Color.fromARGB(255, 30, 114, 241),
               tertiary: Colors.blue.shade900,
               onPrimary: Colors.white,
               onSecondary: Colors.white,
