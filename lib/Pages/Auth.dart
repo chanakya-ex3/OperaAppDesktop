@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_for_all/firebase_for_all.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+final _firebaseAuth = FirebaseAuthForAll.instance;
 
 class AuthPage extends StatefulWidget {
   const AuthPage({super.key});
@@ -12,12 +16,20 @@ class _AuthPageState extends State<AuthPage> {
 
   String username = "";
   String passwd = "";
-  void submit() {
+  void submit() async {
     if (_formKey.currentState!.validate()) {
-      // Navigator.pushNamed(context, MyRoutes.homeRoute);
-      _formKey.currentState!.save();
-      print("Username: $username");
-      print("Password: $passwd");
+      try {
+        _formKey.currentState!.save();
+        await _firebaseAuth.signInWithEmailAndPassword(
+            email: username, password: passwd);
+        print("Username: $username");
+        print("Password: $passwd");
+      } on FirebaseAuthException catch (e) {
+        ScaffoldMessenger.of(context).clearSnackBars();
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text("Invalid Username or Password")));
+        print(e.toString());
+      }
     }
   }
 

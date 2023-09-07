@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>998012965470-t31l96h2ntfppcqh5gqtfphm2ol0pmrp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.998012965470-t31l96h2ntfppcqh5gqtfphm2ol0pmrp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAYiIUnWadTPJbwO6c2ANW5Cv5oWlHtSgY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>998012965470</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.operaAppWindows.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>operaapp-45b6d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>operaapp-45b6d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:998012965470:ios:41d6992ea9977033c65acf</string>
+</dict>
+</plist>
